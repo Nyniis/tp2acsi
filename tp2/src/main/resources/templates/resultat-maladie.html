@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Résultats de la recherche</title>
+</head>
+<body>
+<h1>Résultats de la recherche</h1>
+<div th:if="${maladie != null}">
+  <p>Nom: <span th:text="${maladie.nom}"></span></p>
+  <p>Description: <span th:text="${maladie.description}"></span></p>
+  <!-- Ajoutez d'autres informations de la maladie selon votre modèle de données -->
+</div>
+<div th:if="${maladie == null}">
+  <p>Aucun résultat trouvé pour la maladie spécifiée.</p>
+</div>
+
+
+
+</body>
+</html>
